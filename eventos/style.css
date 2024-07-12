@@ -1,0 +1,53 @@
+
+.masa{
+    border: solid 1px green;
+    padding: 2rem;  
+}
+.masa2{
+    width: 20rem;
+    margin-bottom: 2rem;
+    
+}
+#mi-main{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.maiNotas{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notas{
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.botones{
+    margin-bottom: 1rem;
+}
+.tachado {
+    text-decoration: line-through;
+}
+.navegacion{
+    background-color: rgb(38, 255, 0);
+    height: 5rem;
+}
+.navegacion2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navegacion2 a{  
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1.5rem;
+}
