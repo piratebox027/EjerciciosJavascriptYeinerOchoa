@@ -29,10 +29,12 @@ function pintarNotas() {
         col.innerHTML = `
             <div id="note-${note.id}" class="card mb-3">
                 <div class="card-body">
+                <div class="chekCar">
+                <input type="checkbox" ${note.realizada ? 'checked' : ''} onclick="marcarRealizada(${note.id})">
                     <h5 class="card-title">${note.title}</h5>
+                </div>
                     <p class="card-text ${note.realizada ? 'tachado' : ''}">${note.text}</p>
                     <button class="btn btn-danger" onclick="borrarNota(${note.id})">Borrar Nota</button>
-                    <input type="checkbox" ${note.realizada ? 'checked' : ''} onclick="marcarRealizada(${note.id})">
                 </div>
             </div>
         `;
@@ -42,7 +44,7 @@ function pintarNotas() {
 
 
 
-document.getElementById('saveBtn').addEventListener('click', function() {
+document.getElementById('saveBtn').addEventListener('click', function () {
     const title = document.getElementById('note-title').value;
     const text = document.getElementById('note-text').value;
     if (title && text) {
@@ -51,7 +53,7 @@ document.getElementById('saveBtn').addEventListener('click', function() {
     }
 });
 
-document.getElementById('clearBtn').addEventListener('click', function() {
+document.getElementById('clearBtn').addEventListener('click', function () {
     document.getElementById('note-title').value = '';
     document.getElementById('note-text').value = '';
 });

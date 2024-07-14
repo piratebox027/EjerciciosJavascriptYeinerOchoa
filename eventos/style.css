@@ -16,13 +16,13 @@
    
 }
 .maiNotas{
-    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .notas{
+    background-color: aquamarine;
     width: 50rem;
     display: flex;
     justify-content: center;
@@ -50,4 +50,10 @@
     justify-content: center;
     text-decoration: none;
     padding: 1.5rem;
+}
+.chekCar {
+    display: flex; 
+}
+.chekCar input{
+    width: 1.5rem;
 }
